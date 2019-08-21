@@ -1,0 +1,16 @@
+I attempted to slowing down the robot when it bumps into obstacles
+but i kept having issues with the homebase also slowing down since
+i was changing the speed in the motionhandler which the homebase also inherits from.
+Once i got over that by having the homebase not change speed whenever it bumps into a entity or walls
+or when the robot goes the same. The robot seemed to glitch out a lot more when it bumped into obstacles or the
+walls so i ended up commenting it out. It is still there in my code but i do not run it currently, to save
+myself from other issues i am getting. I also believe it does this because since the angle of incident
+isn't perfect, in the occasions that the robot goes through the entities the speed keeps decreasing
+and the robot gets stuck on the entity, draining it's battery and having me stuck in a glitchy situation.
+Also the same with many people my collision off of other entities still isn't perfect.
+Depending on your approach it usually bounces off the correct way or it just goes through the
+middle, killing the battery a lot. Another bug that i am getting is reducing the play field to not include
+where the simulation controls sits. The robot bounces off the side of the simulation control correctly but
+occasionally glitches out when you approach the simulation control window from the bottom and the robot runs
+off the screen. Not sure why exactly it does that but I'm assuming that the robot goes too deep into the simulation
+control area that i blocked off to where it cannot get itself to bounce off the "wall" and just goes off into the abyss.
